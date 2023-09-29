@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="#F7F7F7">
+
+    <!-- Cronómetro -->
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="48sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Botón de Iniciar -->
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar"
+        android:onClick="startChronometer"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="#007ACC"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Botón de Detener -->
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detener"
+        android:onClick="stopChronometer"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="#FF0000"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"/>
+
+</LinearLayout>
